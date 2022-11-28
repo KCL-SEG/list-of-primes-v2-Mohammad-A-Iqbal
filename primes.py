@@ -12,7 +12,7 @@ def check_prime(num):
 
 def primes(number_of_primes):
     if number_of_primes < 1:
-        raise ValueError()
+        raise ValueError(f"The parameter {number_of_primes} smaller than 1.")
     
     list = []
     j = 0
@@ -27,4 +27,4 @@ def primes(number_of_primes):
         
 
 
-print(primes(-5))
+#print(primes(-5))
