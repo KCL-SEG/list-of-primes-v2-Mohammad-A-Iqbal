@@ -12,20 +12,19 @@ def check_prime(num):
 
 def primes(number_of_primes):
     if number_of_primes < 1:
-        return "ValueError"
+        raise ValueError()
     
     list = []
-
     j = 0
-    
+   
     while len(list) < (number_of_primes):
         if check_prime(j):
             list.append(j)
         
         j = j+1
 
-              
     return list
+        
 
 
 print(primes(-5))
